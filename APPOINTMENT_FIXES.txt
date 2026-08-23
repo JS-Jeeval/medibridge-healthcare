@@ -1,0 +1,11 @@
+MediBridge MVP — Appointment Fixes
+================================
+
+Fixed:
+1. Patient Appointments page now renders the patient's existing active appointments in "My appointments & live token queue".
+2. Doctor appointments are loaded into the shared appointment list and the Doctor Workspace automatically on login/startup.
+3. /api/doctors now includes user_id, so the logged-in doctor's profile is matched correctly.
+4. Booking retries for the same doctor/time are idempotent: they return the existing appointment instead of a misleading duplicate/active-appointment error.
+5. New bookings return the complete appointment payload and the UI refreshes immediately.
+
+No database reset or existing appointment data was deleted.

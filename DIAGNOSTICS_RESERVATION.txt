@@ -1,0 +1,9 @@
+MediBridge Diagnostics Reservation MVP
+
+- In-centre diagnostic bookings are assigned to the first active partner lab.
+- The demo lab has capacity = 1 patient per time slot.
+- Each successful centre reservation receives LAB TOKEN 1.
+- A second reservation for the same lab/date/time is rejected server-side.
+- Home collection does not consume a centre slot.
+- The patient sees the lab name, venue, date, time, reservation status and token.
+- Production: replace the single-capacity demo with real lab chair/room/staff capacity and partner APIs.
